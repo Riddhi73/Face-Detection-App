@@ -61,7 +61,7 @@ class MainActivity : AppCompatActivity() {
         }
     }
     private fun initializeBitmap(bitmapOptions: BitmapFactory.Options){
-        defaultBitmap = BitmapFactory.decodeResource(resources,R.drawable.soumik,bitmapOptions)
+        defaultBitmap = BitmapFactory.decodeResource(resources,R.drawable.sheeva,bitmapOptions)
         temporaryBitmap = Bitmap.createBitmap(defaultBitmap.width,defaultBitmap.height,Bitmap.Config.RGB_565)
         eyePatchBitmap = BitmapFactory.decodeResource(resources,R.drawable.eye_patch,bitmapOptions)
 
@@ -109,7 +109,4 @@ class MainActivity : AppCompatActivity() {
         canvas.drawText(type,xCordinate,yCordinate,rectPaint)
 
     }
-
-
-
 }
